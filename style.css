@@ -1,0 +1,70 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0; /* Define margem zero para todos os elementos */
+    padding: 0; /* Define preenchimento zero para todos os elementos */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total do elemento */
+    font-family: "Jacquard 12", system-ui; /* Define a família de fontes */
+    font-weight: 400; /* Define o peso da fonte como normal */
+    font-style: normal; /* Define o estilo da fonte como normal */
+}
+  
+body{
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização */
+}
+
+.interface{
+    max-width: 1280px; /* Define a largura máxima do elemento .interface como 1280px */
+    margin: 0 auto; /* Centraliza o elemento horizontalmente */
+}
+
+/* ESTILO DO CABECALHO */
+
+header{
+    padding: 40px 4%; /* Define o preenchimento do cabeçalho */
+}
+
+header > .interface{
+    display: flex; /* Usa o modelo flexbox para o elemento .interface dentro do cabeçalho */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Distribui os itens horizontalmente com espaço entre eles */
+}
+
+#et_logo{
+    width: 100px; /* Define a largura do logo com o ID 'et_logo' */
+}
+
+header a{
+    color: rgb(104, 101, 101); /* Define a cor do texto dos links */
+    text-decoration: none; /* Remove a decoração de texto (sublinhado) dos links */
+    display: inline-block; /* Exibe os links como blocos em linha */
+    transition: .2s; /* Adiciona uma transição suave de 0.2 segundos */
+}
+
+header a:hover{
+    color: black; /* Define a cor do texto dos links quando o mouse passa sobre eles */
+    transform: scale(1.50); /* Aumenta a escala dos links quando o mouse passa sobre eles */
+}
+
+header nav ul{
+    list-style-type: none; /* Remove os marcadores de lista dos itens da lista */
+}
+
+header nav ul li{
+    display: inline-block; /* Exibe os itens da lista horizontalmente */
+    padding: 0 50px; /* Define o preenchimento dos itens da lista */
+}
+
+header .btn-contato button{
+    padding: 10px 40px; /* Define o preenchimento do botão */
+    font-size: 15px; /* Define o tamanho da fonte do botão */
+    font-weight: 500; /* Define o peso da fonte do botão */
+    background-color: #00ff08; /* Define a cor de fundo do botão */
+    border: 0; /* Remove a borda do botão */
+    border-radius: 30px; /* Define o raio da borda do botão */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
+}
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #10db17; /* Adiciona uma sombra ao botão quando o mouse passa sobre ele */
+}
