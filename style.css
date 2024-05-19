@@ -22,6 +22,17 @@ body{
     display: flex;
 }
 
+.btn-contato button{
+    padding: 10px 40px; /* Define o preenchimento do botão */
+    font-size: 15px; /* Define o tamanho da fonte do botão */
+    font-weight: 500; /* Define o peso da fonte do botão */
+    background-color: #00ff08; /* Define a cor de fundo do botão */
+    border: 0; /* Remove a borda do botão */
+    border-radius: 30px; /* Define o raio da borda do botão */
+    cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
+    
+}
+
 /* ESTILO DO CABECALHO */
 
 header{
@@ -47,7 +58,7 @@ header a{
 
 header a:hover{
     color: black; /* Define a cor do texto dos links quando o mouse passa sobre eles */
-    transform: scale(1.50); /* Aumenta a escala dos links quando o mouse passa sobre eles */
+    transform: scale(1.10); /* Aumenta a escala dos links quando o mouse passa sobre eles */
 }
 
 header nav ul{
@@ -59,18 +70,9 @@ header nav ul li{
     padding: 0 50px; /* Define o preenchimento dos itens da lista */
 }
 
-header .btn-contato button{
-    padding: 10px 40px; /* Define o preenchimento do botão */
-    font-size: 15px; /* Define o tamanho da fonte do botão */
-    font-weight: 500; /* Define o peso da fonte do botão */
-    background-color: #00ff08; /* Define a cor de fundo do botão */
-    border: 0; /* Remove a borda do botão */
-    border-radius: 30px; /* Define o raio da borda do botão */
-    cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
-}
-
-header .btn-contato button:hover{
+.btn-contato button:hover{
     box-shadow: 0px 0px 8px #10db17; /* Adiciona uma sombra ao botão quando o mouse passa sobre ele */
+    transform: scale(1.10);
 }
 
 /* ESTILO DO TOPO DO SITE */
@@ -95,3 +97,22 @@ section.topo-do-site .flex{
     font-size: 50px;
 }
 
+.topo-do-site .txt-topo-site p{
+    color: black;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 25px;
+    }
+}
