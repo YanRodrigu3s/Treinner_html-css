@@ -8,7 +8,7 @@
     font-weight: 400; /* Define o peso da fonte como normal */
     font-style: normal; /* Define o estilo da fonte como normal */
 }
-  
+
 body{
     height: 100vh; /* Define a altura do corpo da página como 100% da altura da janela de visualização */
 }
@@ -31,6 +31,16 @@ body{
     border-radius: 30px; /* Define o raio da borda do botão */
     cursor: pointer; /* Define o cursor do mouse como ponteiro ao passar sobre o botão */
     
+}
+
+h2.titulo{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #11a116;
 }
 
 /* ESTILO DO CABECALHO */
@@ -115,4 +125,39 @@ section.topo-do-site .flex{
     100%{
         top: 25px;
     }
+}
+
+/*  ESTILO DAS ESPECIALIDADES   */
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    padding: 40px;
+    /* border: 3px solid black; */
+    margin-top: 50px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #10db17;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 60px;
+    color: black;
+    margin-top: 30px;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
 }
