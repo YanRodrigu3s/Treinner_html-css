@@ -54,6 +54,10 @@ header{
     padding: 40px 4%; /* Define o preenchimento do cabeçalho */
 }
 
+header .menu-desktop{
+    display: block;
+}
+
 header > .interface{
     display: flex; /* Usa o modelo flexbox para o elemento .interface dentro do cabeçalho */
     align-items: center; /* Alinha os itens verticalmente ao centro */
@@ -201,6 +205,14 @@ section.sobre .flex{
     transition: .2s;
 }
 
+.sobre #foto_et_sobre{
+    height: 500px; 
+    width: auto; 
+    border: 2px solid black; 
+    border-radius: 40px;
+}
+
+
 
 /*  ESTILO PORTFÓLIO    */
 
@@ -306,4 +318,119 @@ footer .line-footer p a{
     font-size: 25px;
     color: #0ba310;
     margin: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    /*  CLASSES GERIAS  */
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    /*  CABEÇALHO   */
+    header .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /*  TOPO DO SITE    */
+
+    section.topo-do-site .flex{
+        gap: 60px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 25px;
+    }
+
+    .topo-do-site .txt-topo-site h1 span{
+        font-size: 25px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    .topo-do-site .txt-topo-site p{
+       text-align: justify;
+    }
+
+    /*  ESTILO DAS ESPECIALIDADES   */
+
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    section.especialidades h2{
+        font-size: 35px;
+    }
+
+    section.especialidades .flex{
+        gap: 10px;
+    }
+
+    /*  SOBRE   */
+
+    .sobre .flex{
+        flex-direction: column-reverse;
+    }
+
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 32px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .sobre #foto_et_sobre{
+        height: 100%; 
+        width: 100%; 
+    }
+
+    /*  PORTFÓLIO   */
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    .img-port:hover{
+        transform: scale(1.1);
+    }
+
+    /*  RODAPÉ  */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+
 }
