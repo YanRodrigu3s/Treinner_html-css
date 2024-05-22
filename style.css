@@ -200,3 +200,32 @@ section.sobre .flex{
     margin: 0 10px;
     transition: .2s;
 }
+
+
+/*  ESTILO PORTFÓLIO    */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #0ba3107c;
+}
+
+section.portfolio .flex{
+    margin-top: 60px;
+    justify-content: space-around;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 40%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.img-port:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 8px #10db17;
+    transition: .2s;
+}
+
